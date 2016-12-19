@@ -89,11 +89,11 @@ void Tree::Grow() {
             }
             case '+':
                 curVect = glm::rotateZ(curVect, glm::radians(glm::linearRand<float>(-30.0f, 30.0f)));
-                curVect = glm::rotateY(curVect, glm::radians(glm::linearRand<float>(0.0f, 30.0f)));
+                curVect = glm::rotateY(curVect, glm::radians(glm::linearRand<float>(0.0f, 45.0f)));
                 break;
             case '-':
                 curVect = glm::rotateZ(curVect, glm::radians(glm::linearRand<float>(-30.0f, 30.0f)));
-                curVect = glm::rotateY(curVect, glm::radians(glm::linearRand<float>(-30.0f, 0.0f)));
+                curVect = glm::rotateY(curVect, glm::radians(glm::linearRand<float>(-45.0f, 0.0f)));
                 break;
             case '[':
                 savedPos.push(curPos);
